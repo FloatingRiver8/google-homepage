@@ -1,27 +1,42 @@
 
-container{
+ *{
+    box-sizing: border-box;
+  }
+
+
+.container{
     display:grid;
     width:100%;
-    background:rgb(93, 177, 206);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 200px 200px 200px; 
+    height:100%;
+   grid-template-columns: auto  auto auto auto auto auto ; 
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap:10px;
 
 }
 
-.Nav-bar{
-   
-    border-width: 1px;
+.itemPic{
+  
+    grid-column: 4/ 5;
+    grid-row: 3/ 5;
+    
+
+    }
+
+.itemBar{ /*SearchBar*/
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
     border-radius: 50px;
-    border-color: rgb(240, 237, 237);
-   padding:10px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    
-    
-    
-
+    border-color: rgb(209, 78, 78);
+    background-color: rgba(250, 248, 248, 0.8);
+    border-width: 10px;
+    width: 500px;
+    height: 30px;
+    /*padding:10px;*/
 }
+  
+    
+   
+
 
 
 
